@@ -49,7 +49,10 @@ module.exports = {
             filename: "remoteEntry.js",
             exposes: {
                 "./Content": "./src/App",
-                "./routes": "./src/routes",
+                "./routes": "./src/siteRoutes",
+            },
+            remotes: {
+                "ExampleRemoteDetails": "ExampleRemoteDetails@http://localhost:3004/remoteEntry.js",
             },
             shared: {
               ...dependencies,
@@ -60,6 +63,10 @@ module.exports = {
               "react-dom": {
                 singleton: true,
                 requiredVersion: dependencies["react-dom"],
+              },
+              "react-router-dom": {
+                singleton: true,
+                requiredVersion: dependencies["react-router-dom"],
               },
               lodash: {
                   singleton: true,
