@@ -5,7 +5,7 @@ import _ from 'lodash';
 function App() {
   return (
     <div className="App">
-      Remote site - content
+      Remote site - content changes
       <p>
         Lodash v - {_.VERSION}
       </p>
