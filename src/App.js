@@ -1,9 +1,10 @@
 import React from 'react';
-import './App.css';
+import style from './App.module.css';
+import _ from 'lodash';
 
 function App() {
   return (
-    <div className="App">
+    <div className={style.App}>
       Remote site - content changes
       <p>
         Lodash v - {_.VERSION}
