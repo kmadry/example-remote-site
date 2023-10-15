@@ -48,7 +48,8 @@ module.exports = {
             name: "ExampleRemoteSite",
             filename: "remoteEntry.js",
             exposes: {
-              "./Content": "./src/App",
+                "./Content": "./src/App",
+                "./routes": "./src/routes",
             },
             shared: {
               ...dependencies,
